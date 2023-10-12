@@ -144,7 +144,7 @@ button.secondary {
   height: 100%;
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/test.JPG");
+    url("../images/test.jpg");
   background-size: cover;
   object-fit: cover;
   object-position: top;
@@ -218,7 +218,7 @@ button.secondary {
   position: relative;
   height: 80vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./images/header.jpg");
+    url("./images/header.JPG");
 
   background-size: cover;
 
@@ -309,7 +309,7 @@ button.secondary {
 }
 
 .contact__container button {
-  color: #white;
+  color: white;
   margin-bottom: 5px;
   margin-top: 5px;
 }
