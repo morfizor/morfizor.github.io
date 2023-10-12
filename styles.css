@@ -1,6 +1,7 @@
 :root {
     --color-navbar-text: #fff;
     --max-width: 940px;
+    --global-padding: 0 20px;
 }
 
 * {
@@ -9,12 +10,7 @@
     padding: 0;
 }
 
-.navbar__list {
-    max-width: var(--max-width);
-}
-
 h1,h2,h3 {
-
     font-family: Arial, sans-serif;
 }
 
@@ -22,15 +18,28 @@ h1,h2  {
     font-size: 40px;
     line-height: 35px;
     font-weight: 700;
-
 }
 
-p, li {
+p {
+    line-height: 1.5;
+}
+
+p, li, strong {
     font-family: Ubuntu, sans-serif;
+}
+
+strong {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    text-decoration: none;
 }
 
 a {
     text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.90;   
 }
 
 button {
@@ -39,14 +48,15 @@ button {
     color: #000;
     background-color: #fff;
     font-family: Ubuntu, Helvetica, sans-serif;
-    font-size: 10px;
+    font-size: 15px;
     font-weight: 700;
     letter-spacing: 1.2px;
     cursor: pointer;
 }
 
-a:hover {
-    opacity: 0.90;   
+button.secondary {
+    background: #000;
+    color: #fff;
 }
 
 .navbar {
@@ -56,7 +66,7 @@ a:hover {
     position: fixed;
     top: 0;
     left: 0;
-    padding: 0 20px;
+    padding: var(--global-padding);
     height: 60px;
     width: 100%;
     background: rgb(0,0,0);
@@ -77,10 +87,7 @@ a:hover {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    
-}
-
-.navbar__item {
+    max-width: var(--max-width);
 }
 
 .navbar__link {
@@ -119,17 +126,7 @@ a:hover {
     text-transform: none;
     text-align: center;
     text-shadow: 5px 6px 19px rgba(0, 0, 0, 0.11);
-}
-
-#home button {
-    margin-top: 25px;
-    padding: 10px 30px;
-    background-color: #fff;
-    font-family: Ubuntu, Helvetica, sans-serif;
-    color: #000;
-    font-size: 15px;
-    font-weight: 700;
-    letter-spacing: 1.2px;
+    margin-bottom: 30px;
 }
 
 .home__content img {
@@ -172,88 +169,61 @@ a:hover {
 
 #about {
    background: white;
+   padding: var(--global-padding);
 }
 
 .about__container {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+    padding: 80px 0 220px;
     margin-left: auto;
     margin-right: auto;
     max-width: 940px;
-    height: 30vh;
     justify-content: flex-start;
-    background-color: aqua;
-    align-items: center;
-    
 }
 
-.about__paragraph_1 {
-    
-    background-color: yellow;
-    font-family: Ubuntu, Helvetica, sans-serif;
-    color: #000;
-    font-size: 14px;
-    line-height: 25px;
-    text-align: left;
-    text-decoration: none;
-    margin-left: 70px;
+.about__container .left, .right {
     width: 50%;
-
- 
-}
-.about__paragraph_2 {
-    font-family: Ubuntu, Helvetica, sans-serif;
-   background-color: green;
-    color: #000;
-    font-size: 40px;
-    line-height: 50px;
-    text-align: left;
-    text-decoration: none;
-    font-weight: 700;
-    margin-left: 30px;
-    width: 50%;
-
 }
 
-.about__container  button {
-
-    background-color: black; 
-    color: white;
-
+.about__container .left strong {
+    display: block;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    border-left: 2px solid #000;
 }
 
+.about__container .right p strong {
+    display:block;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
 
-.results {
-
+.about__container button {
+    margin-top: 30px;
 }
 
 .results__container {
     display: flex;
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(0deg, rgba(0,0,0,0) 70%, rgba(0,0,0,1) 100%), url('./images/header.jpg');
-    background-size: cover;
-    object-fit: cover;
-    object-position: 'center';
-    background-position:  ; 
-    z-index: -1;
     height: 80vh;
-    overflow: hidden;
-     }
+    background: url('./images/header.jpg');
+    background-size: cover;
+    background-position: -100px 16%;
+    background-repeat: no-repeat;
+    color: #fff;
+}
 
- .contact__container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 940px;
-        height: 30vh;
-        background-color: aqua;
-        align-items: center;
+.contact__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 940px;
+    height: 30vh;
+    background-color: aqua;
+    align-items: center;
 }
 
 .contact__social {
@@ -261,9 +231,26 @@ a:hover {
     text-align: left;
     background-color: yellow;
 }
+
+
 @media (max-width: 992px) {
     .home__promo div li:nth-child(1) {
         display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .about__container {
+        flex-direction: column;
+        padding-bottom: 160px;
+    }
+
+    .about__container .left, .right {
+        width: 85%;
+    }
+
+    .about__container .right {
+        margin-top: 50px;
     }
 }
 
