@@ -144,7 +144,7 @@ button.secondary {
   height: 100%;
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
-    url("../images/header.jpg");
+    url("../images/header.JPG");
   background-size: cover;
   object-fit: cover;
   object-position: top;
