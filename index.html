@@ -58,7 +58,9 @@
           <a class="navbar__logo" href="#"><strong>KD Fitness</strong></a>
           <ul class="navbar__list">
             <li class="navbar__item">
-              <a class="navbar__link" href="#home">Kezdőlap</a>
+              <a onclick="toggleMenu()" class="navbar__link" href="#home"
+                >Kezdőlap</a
+              >
             </li>
             <li class="navbar__item">
               <a class="navbar__link" href="#personal-training">
@@ -66,10 +68,14 @@
               </a>
             </li>
             <li class="navbar__item">
-              <a class="navbar__link" href="#about"> Rólam </a>
+              <a onclick="toggleMenu()" class="navbar__link" href="#about">
+                Rólam
+              </a>
             </li>
             <li class="navbar__item">
-              <a class="navbar__link" href="#"> Kapcsolat </a>
+              <a onclick="toggleMenu()" class="navbar__link" href="#contact">
+                Kapcsolat
+              </a>
             </li>
           </ul>
           <button onClick="toggleMenu()" class="menu-button">
@@ -167,9 +173,9 @@
       <section id="contact">
         <div class="contact__container">
           <div class="contact__phone">
-            <h3><img src="./images/call.png" />Text or Call</h3>
-            <p>Leggyorsabb módja hogy kapcsolatba kerüljünk</p>
-            <button class="button-secondary">Hívj fel</button>
+            <h3><img src="./images/call.png" />Telefon</h3>
+            <p>Leggyorsabb elérhetőség</p>
+            <a href="tel:+36305975850" class="button-secondary">Hívj fel</a>
           </div>
 
           <div class="contact__mail">
@@ -178,7 +184,9 @@
               Email
             </h3>
             <p>Küldj nekem E-mailt</p>
-            <button class="button-secondary">Küldés</button>
+            <a href="mailto:krezidavid@gmail.com" class="button-secondary"
+              >Küldés</a
+            >
           </div>
 
           <div class="contact__social">
@@ -189,7 +197,12 @@
             </h3>
             <p>keress bizalommal instagramon</p>
 
-            <button class="button-secondary">Social</button>
+            <a
+              href="https://www.instagram.com/krezidavid/"
+              target="_blank"
+              class="button-secondary"
+              >Social</a
+            >
 
             <p></p>
           </div>
