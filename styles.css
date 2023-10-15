@@ -441,7 +441,7 @@ a:hover {
     flex-direction: column;
     gap: 15px;
   }
-  .navbar__logo {
+  .navbar.open .navbar__logo {
     margin: 22px 0 15px;
   }
 }
@@ -456,5 +456,11 @@ a:hover {
   }
   .home__content h1 {
     font-size: 35px;
+  }
+}
+
+@supports (font: -apple-system-body) and (-webkit-appearance: none) {
+  img[loading="lazy"] {
+    clip-path: inset(0.6px);
   }
 }
