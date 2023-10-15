@@ -317,7 +317,7 @@ a:hover {
   flex-direction: column;
   align-items: center;
   color: black;
-  text-align: left;
+  text-align: center;
   background-color: white;
   width: auto;
   height: auto;
@@ -434,5 +434,18 @@ a:hover {
   }
   .navbar.open button {
     margin: 10px 0;
+  }
+}
+
+@media (max-width: 450px) {
+  #about {
+    background-position: center center;
+  }
+
+  .about__right {
+    width: 100%;
+  }
+  .home__content h1 {
+    font-size: 35px;
   }
 }
