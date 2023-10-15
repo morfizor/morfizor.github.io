@@ -9,6 +9,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
+    <link rel="icon" href="images/android-chrome-192x192.png" sizes="192x192" />
+    <link rel="icon" href="images/android-chrome-512x512.png" sizes="512x512" />
+    <link rel="icon" href="images/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" href="images/favicon-32x32.png" sizes="32x32" />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
@@ -49,6 +53,9 @@
             <li class="navbar__item">
               <a class="navbar__link" href="#"> Kapcsolat </a>
             </li>
+            <button class="navbar__mobile">
+              <div class="bar"></div>
+            </button>
           </ul>
         </div>
       </nav>
@@ -60,8 +67,11 @@
       <section id="home">
         <div class="home__content">
           <img alt="egy kép rólam" />
-          <h1>A legjobb eredményekhez<br> a legjobbaktól kell tanulni</h1>
-          <button>Kezdd el ma</button>
+          <h1>
+            A legjobb eredményekhez<br />
+            a legjobbaktól kell tanulni
+          </h1>
+          <button class="button-primary">Kezdd el ma</button>
         </div>
 
         <ul class="home__promo">
@@ -88,18 +98,18 @@
               kezdve segítek elérni céljaid a teljesen kezdőtől a versenyzői
               szintig.
             </p>
-            <button class="secondary">Kezdd el ma</button>
+            <button class="button-secondary">Kezdd el ma</button>
           </div>
         </div>
       </section>
       <section id="about">
         <div class="about__container">
           <div class="about__left">
-            <!-- Slider main container -->
+            <!--
             <div class="swiper">
-              <!-- Additional required wrapper -->
+             
               <div class="swiper-wrapper">
-                <!-- Slides -->
+               
                 <div class="swiper-slide">
                   <p></p>
                     "F
@@ -112,14 +122,14 @@
                 <div class="swiper-slide">Slide 3</div>
                 ...
               </div>
-              <!-- If we need pagination -->
+            
               <div class="swiper-pagination"></div>
 
-              <!-- If we need navigation buttons -->
+            
               <div class="swiper-button-prev"></div>
               <div class="swiper-button-next"></div>
             </div>
-          </div>
+          --></div>
           <div class="about__right">
             <h2>Rólam</h2>
             <p>
@@ -139,44 +149,40 @@
       <section id="contact">
         <div class="contact__container">
           <div class="contact__phone">
-            <h3><img src="./images/call.png">Text or Call
-            </h3>
+            <h3><img src="./images/call.png" />Text or Call</h3>
             <p>Leggyorsabb módja hogy kapcsolatba kerüljünk</p>
-            <button class="secondary">Hívj fel</button>
+            <button class="button-secondary">Hívj fel</button>
           </div>
 
           <div class="contact__mail">
             <h3>
-            <img src="./images/mail.png">
-                Email
-
+              <img src="./images/mail.png" />
+              Email
             </h3>
             <p>Küldj nekem E-mailt</p>
-            <button class="secondary">Küldés</button>
+            <button class="button-secondary">Küldés</button>
           </div>
 
           <div class="contact__social">
-          <h3><img src="./images/insta.png"/>
-           
+            <h3>
+              <img src="./images/insta.png" />
+
               Instagram
-              </h3>
-             <p>keress bizalommal instagramon
-            
-             </p>
-             
-              <button class="secondary">Social</button>
-            
+            </h3>
+            <p>keress bizalommal instagramon</p>
+
+            <button class="button-secondary">Social</button>
+
             <p></p>
           </div>
         </div>
       </section>
 
-    <footer id="footer">
+      <footer id="footer">
         <div class="footer__container">
-            <p>© 2023 KD Fitness. All Rights Reserved.</p>
+          <p>© 2023 KD Fitness. All Rights Reserved.</p>
         </div>
-
-    </footer>
+      </footer>
     </main>
   </body>
 </html>
