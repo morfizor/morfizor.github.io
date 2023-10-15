@@ -13,6 +13,10 @@
     <link rel="icon" href="images/android-chrome-512x512.png" sizes="512x512" />
     <link rel="icon" href="images/favicon-16x16.png" sizes="16x16" />
     <link rel="icon" href="images/favicon-32x32.png" sizes="32x32" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
@@ -30,6 +34,19 @@
           },
         });
       });
+    </script>
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementsByClassName("navbar")[0];
+        const icon = document.getElementsByClassName("menu-icon")[0];
+        if (menu.className === "navbar") {
+          menu.className += " open";
+          icon.textContent = "Close";
+        } else {
+          menu.className = "navbar";
+          icon.textContent = "Menu";
+        }
+      }
     </script>
   </head>
   <body>
@@ -53,10 +70,10 @@
             <li class="navbar__item">
               <a class="navbar__link" href="#"> Kapcsolat </a>
             </li>
-            <button class="navbar__mobile">
-              <div class="bar"></div>
-            </button>
           </ul>
+          <button onClick="toggleMenu()" class="menu-button">
+            <span class="material-symbols-outlined menu-icon">Menu</span>
+          </button>
         </div>
       </nav>
     </header>
