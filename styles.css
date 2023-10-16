@@ -96,6 +96,9 @@ tr:nth-of-type(2n) {
 .personal_training {
   margin-top: 15px;
 }
+.personal_training ul li {
+  margin-bottom: 10px;
+}
 
 .button-primary {
   border: none;
@@ -188,7 +191,6 @@ tr:nth-of-type(2n) {
   position: relative;
   height: 92vh;
   overflow: hidden;
-  overflow-x: scroll;
 }
 
 .home__content h1 {
@@ -502,6 +504,14 @@ tr:nth-of-type(2n) {
   .navbar.open .navbar__logo {
     margin: 22px 0 15px;
   }
+
+  .personal_training {
+    padding: 0 20px;
+    text-align: justify;
+  }
+  .personal_training ul li {
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -516,6 +526,24 @@ tr:nth-of-type(2n) {
     font-size: 35px;
   }
 
+  th {
+    display: none;
+  }
+
+  td {
+    display: block;
+    padding: 0.5rem;
+    font-size: 20px;
+  }
+
+  td::before {
+    content: attr(data-cell) ": ";
+  }
+
+  .personal_training {
+    padding: 0 20px;
+  }
+}
 @supports (font: -apple-system-body) and (-webkit-appearance: none) {
   img[loading="lazy"] {
     clip-path: inset(0.6px);
