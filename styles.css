@@ -526,6 +526,9 @@ tr:nth-of-type(2n) {
     font-size: 35px;
   }
 
+  table {
+    margin-top: 20px;
+  }
   th {
     display: none;
   }
