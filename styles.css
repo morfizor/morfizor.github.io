@@ -53,6 +53,50 @@ a:hover {
   opacity: 0.9;
 }
 
+table {
+  background-color: #5473c9;
+  opacity: 0.7;
+
+  font-family: Ubuntu, Helvetica, sans-serif;
+}
+
+th,
+td {
+  padding: 1rem;
+  font-size: 35px;
+  text-align: center;
+}
+
+th {
+  background: hsl(0 0% 0% / 0.5);
+}
+tr:nth-of-type(2n) {
+  background: hsl(0 0% 0% / 0.1);
+}
+
+.personal_training,
+.personal_training ul li {
+  color: aliceblue;
+  text-decoration: none;
+  list-style: none;
+  font-family: Ubuntu, Helvetica, sans-serif;
+  line-height: 24px;
+  max-width: 940px;
+  text-shadow: 1px 1px 8px rgba(68, 68, 68, 0.9);
+}
+
+.personal_training ul li:nth-child(3) {
+  margin-top: 15px;
+}
+
+.personal_training h3 {
+  text-align: center;
+}
+
+.personal_training {
+  margin-top: 15px;
+}
+
 .button-primary {
   border: none;
   padding: 10px 30px;
@@ -144,6 +188,7 @@ a:hover {
   position: relative;
   height: 92vh;
   overflow: hidden;
+  overflow-x: scroll;
 }
 
 .home__content h1 {
@@ -166,8 +211,21 @@ a:hover {
     url("../images/header.JPG");
   background-size: cover;
   background-position: 0 17%;
-  object-fit: cover;
-  object-position: top;
+
+  z-index: -1;
+}
+
+.home__content .training-home__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url("../images/Dunavolgyi.com-5402.JPG");
+  background-size: cover;
+  background-position: 0 17%;
+  filter: brightness(30%);
+
   z-index: -1;
 }
 
@@ -457,7 +515,6 @@ a:hover {
   .home__content h1 {
     font-size: 35px;
   }
-}
 
 @supports (font: -apple-system-body) and (-webkit-appearance: none) {
   img[loading="lazy"] {
