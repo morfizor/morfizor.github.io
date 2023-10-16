@@ -526,8 +526,12 @@ tr:nth-of-type(2n) {
     font-size: 35px;
   }
 
+  .home__content {
+    height: auto;
+  }
+
   table {
-    margin-top: 400px;
+    margin-top: 300px;
   }
   th {
     display: none;
