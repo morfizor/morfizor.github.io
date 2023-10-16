@@ -113,6 +113,10 @@ tr:nth-of-type(2n) {
   cursor: pointer;
 }
 
+.button-primary a {
+  color: black;
+}
+
 .button-secondary {
   border: none;
   padding: 10px 30px;
