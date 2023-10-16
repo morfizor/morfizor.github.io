@@ -187,7 +187,7 @@ tr:nth-of-type(2n) {
 }
 
 /* HOME */
-x .home__content {
+.home__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
