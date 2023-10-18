@@ -615,7 +615,7 @@ tr:nth-of-type(2n) {
 /* smaller screen*/
 @media (max-width: 375px) {
   #about {
-    padding-bottom: 12vh;
+    padding-bottom: 20vh;
   }
 
   .trainig-prices__container h1 {
