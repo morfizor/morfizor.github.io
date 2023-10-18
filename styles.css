@@ -440,9 +440,8 @@ tr:nth-of-type(2n) {
 .contact__container h3 img {
   margin-right: 10px;
 }
-.contact__social,
-.contact__phone,
-.contact__mail {
+
+.contact__item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -451,6 +450,7 @@ tr:nth-of-type(2n) {
   background-color: white;
   width: auto;
   height: auto;
+  margin: 20px;
 }
 
 .contact__container img {
