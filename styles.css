@@ -2,6 +2,7 @@
   --color-navbar-text: #fff;
   --max-width: 940px;
   --global-padding: 0 20px;
+  --navbar-height: 60px;
 }
 
 * {
@@ -11,6 +12,9 @@
   scroll-behavior: smooth;
 }
 
+main {
+  padding-top: var(--navbar-height);
+}
 h1,
 h2,
 h3 {
@@ -108,7 +112,7 @@ tr:nth-of-type(2n) {
   border: none;
   padding: 10px 30px;
   color: #000;
-  background-color: #grey;
+  background-color: white;
   font-family: Ubuntu, Helvetica, sans-serif;
   font-size: 15px;
   font-weight: 700;
@@ -206,7 +210,6 @@ tr:nth-of-type(2n) {
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 92vh;
   min-height: 92vh;
   overflow: hidden;
 }
@@ -266,7 +269,6 @@ tr:nth-of-type(2n) {
   color: white;
   font-size: 1.6rem;
   width: 940px;
-  height: auto;
   text-align: center;
   padding: 20px 0;
 }
@@ -361,7 +363,9 @@ tr:nth-of-type(2n) {
 
 #about {
   position: relative;
+  min-height: 80vh;
   height: 80vh;
+
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./images/DSC02782.JPG");
 
@@ -401,7 +405,8 @@ tr:nth-of-type(2n) {
 }
 
 .about__right {
- width: 50%;
+  width: 50%;
+  height: auto;
 }
 
 .about__right h2,
@@ -582,22 +587,12 @@ tr:nth-of-type(2n) {
 
   .training-session,
   .training-price {
-
     width: 14%;
-
   }
 
-.trainig-prices__container
- {
-    margin-top: 60px;
-    
-  }
-
-  .trainig-prices__container h1{
-
+  .trainig-prices__container h1 {
     font-size: 2.3rem;
   }
-
 }
 
 @media (max-width: 450px) {
@@ -616,6 +611,17 @@ tr:nth-of-type(2n) {
   .training-home__content {
     height: auto;
   }
+}
+/* smaller screen*/
+@media (max-width: 375px) {
+  #about {
+    padding-bottom: 12vh;
+  }
+
+  .trainig-prices__container h1 {
+    font-size: 2rem;
+  }
+}
 
 /*
   table {
