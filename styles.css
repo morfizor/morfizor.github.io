@@ -596,6 +596,7 @@ tr:nth-of-type(2n) {
     height: auto;
   }
 
+/*
   table {
     margin-top: 70px;
   }
@@ -617,6 +618,7 @@ tr:nth-of-type(2n) {
     padding: 0 20px;
   }
 }
+*/
 @supports (font: -apple-system-body) and (-webkit-appearance: none) {
   img[loading="lazy"] {
     clip-path: inset(0.6px);
