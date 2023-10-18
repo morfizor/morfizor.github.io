@@ -401,7 +401,7 @@ tr:nth-of-type(2n) {
 }
 
 .about__right {
-  width: 50%;
+ width: 50%;
 }
 
 .about__right h2,
@@ -516,6 +516,8 @@ tr:nth-of-type(2n) {
   }
   .about__right {
     width: 80%;
+    height: 10%;
+    font-size: small;
   }
   .about__right h2 {
     text-align: right;
