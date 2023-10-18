@@ -494,6 +494,12 @@ tr:nth-of-type(2n) {
   #about {
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),
       url("./images/DSC02782.JPG");
+
+    background-size: cover;
+
+    background-position: 0 30%;
+
+    background-repeat: no-repeat;
   }
   .navbar.open .navbar__wrapper {
     position: relative;
