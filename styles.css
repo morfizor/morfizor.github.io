@@ -577,6 +577,25 @@ tr:nth-of-type(2n) {
   .personal_training ul li {
     margin-bottom: 10px;
   }
+
+  .training-session,
+  .training-price {
+
+    width: 14%;
+
+  }
+
+.trainig-prices__container
+ {
+    margin-top: 60px;
+    
+  }
+
+  .trainig-prices__container h1{
+
+    font-size: 2.3rem;
+  }
+
 }
 
 @media (max-width: 450px) {
